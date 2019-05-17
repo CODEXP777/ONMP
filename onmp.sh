@@ -446,11 +446,11 @@ user               = theOne
 socket             = /opt/var/run/mysqld.sock
 pid-file           = /opt/var/run/mysqld.pid
 basedir            = /opt
-lc_messages_dir    = /opt/share/mysql
+lc_messages_dir    = /opt/share/mariadb
 lc_messages        = en_US
 datadir            = /opt/var/mysql/
 tmpdir             = /opt/tmp/
-
+innodb_use_native_aio = 0
 skip-external-locking
 
 bind-address       = 127.0.0.1
